@@ -11,7 +11,7 @@ class Sagittarius < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/undeadindustries/sagittarius/releases/download/v0.4.0/sagittarius_0.4.0_darwin_amd64.tar.gz"
-      sha256 "a40fd739c380ea4d3b512dfef463f2bd48bbf679eace402db92eae64fce2f3c9"
+      sha256 "34209d99a04ed7c18a27a7ae67d869d92a559e458bfa761020953b6461726608"
 
       def install
         bin.install "sagittarius"
@@ -19,7 +19,7 @@ class Sagittarius < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/undeadindustries/sagittarius/releases/download/v0.4.0/sagittarius_0.4.0_darwin_arm64.tar.gz"
-      sha256 "0b689d339f6a4a16f5753fc86b19542dd370c5cc64ab5d163030b8eea9d9a72d"
+      sha256 "f1ff8b38d5994bf20369549cfb868ab4e04814c651bc2c2df451474e6de6e979"
 
       def install
         bin.install "sagittarius"
@@ -31,7 +31,7 @@ class Sagittarius < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/undeadindustries/sagittarius/releases/download/v0.4.0/sagittarius_0.4.0_linux_amd64.tar.gz"
-        sha256 "3ea3a4aae9d40ab4d611c71fa37dd8cf60376a877f4d1e9a32e98b53fa4ae387"
+        sha256 "bc5d29e49bdaea04ea19f80bd364f5d2b7c23c2518b3106d643230e753ee6f3d"
 
         def install
           bin.install "sagittarius"
@@ -41,7 +41,7 @@ class Sagittarius < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/undeadindustries/sagittarius/releases/download/v0.4.0/sagittarius_0.4.0_linux_arm64.tar.gz"
-        sha256 "1ec68a81d26fcd2dfc9ccf395c64fc5ba9a7c9f7a59e1aa0725355a212c848bf"
+        sha256 "0765fe79207cc6a0d883c0a162cc3f7f53cd6a5276f09461c4d7436bc0de0098"
 
         def install
           bin.install "sagittarius"
