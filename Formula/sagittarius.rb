@@ -5,21 +5,21 @@
 class Sagittarius < Formula
   desc "Go AI agent CLI for building large projects, adminning systems, or personal assistance"
   homepage "https://github.com/undeadindustries/sagittarius"
-  version "0.24.1"
+  version "0.25.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/undeadindustries/sagittarius/releases/download/v0.24.1/sagittarius_0.24.1_darwin_amd64.tar.gz"
-      sha256 "fc8d0715d0fdb7fe1e5ecad4f38c754338ded2cd480191db28ac6fc8f49e7e99"
+      url "https://github.com/undeadindustries/sagittarius/releases/download/v0.25.0/sagittarius_0.25.0_darwin_amd64.tar.gz"
+      sha256 "182f8dfea6146f16a97d9dc42d23dc8a8cbe7c616a8afb1c7c6a0e71f488d096"
 
       define_method(:install) do
         bin.install "sagittarius"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/undeadindustries/sagittarius/releases/download/v0.24.1/sagittarius_0.24.1_darwin_arm64.tar.gz"
-      sha256 "7e205c7b4082972da704ee8c4205275482ed1423a453581deebfd028965ef2d4"
+      url "https://github.com/undeadindustries/sagittarius/releases/download/v0.25.0/sagittarius_0.25.0_darwin_arm64.tar.gz"
+      sha256 "09646dd852c421442d4d0c9e2ad65596f73612972bf99b2c657459b003a1d491"
 
       define_method(:install) do
         bin.install "sagittarius"
@@ -29,15 +29,15 @@ class Sagittarius < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/undeadindustries/sagittarius/releases/download/v0.24.1/sagittarius_0.24.1_linux_amd64.tar.gz"
-      sha256 "2c276d8d600dd0ba57cc1ff6a372f193ad8a6132e90a73b363602c3eee92647d"
+      url "https://github.com/undeadindustries/sagittarius/releases/download/v0.25.0/sagittarius_0.25.0_linux_amd64.tar.gz"
+      sha256 "03f3dea828669f7119efe6f1339814679bb9dbdab9c4ea7aef2bf8e8830455f4"
       define_method(:install) do
         bin.install "sagittarius"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/undeadindustries/sagittarius/releases/download/v0.24.1/sagittarius_0.24.1_linux_arm64.tar.gz"
-      sha256 "d7ae2e28778786fa0a3876048c6d8673cceb777d78549107194473b3d89a5600"
+      url "https://github.com/undeadindustries/sagittarius/releases/download/v0.25.0/sagittarius_0.25.0_linux_arm64.tar.gz"
+      sha256 "af58082be92e689f4b8fda7f219ab9a6a77bc756c01e1b3db309019d4a6fcc24"
       define_method(:install) do
         bin.install "sagittarius"
       end
